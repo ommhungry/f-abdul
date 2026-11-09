@@ -1,0 +1,112 @@
+[
+  {
+    "issuer_ca_id": 204407,
+    "issuer_name": "C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV E36",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 29641665431,
+    "not_before": "2026-10-04T00:00:00",
+    "not_after": "2026-12-31T19:13:57",
+    "serial_number": "6e68e03d9f54f2f9549443c8486a00f8",
+    "result_count": 3
+  },
+  {
+    "issuer_ca_id": 286236,
+    "issuer_name": "C=US, O=Google Trust Services, CN=WE1",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 29437439669,
+    "not_before": "2026-09-07T09:01:31",
+    "not_after": "2026-12-06T10:01:27",
+    "serial_number": "009bb1832ee7e8bd680e9056c7e6602873",
+    "result_count": 3
+  },
+  {
+    "issuer_ca_id": 432477,
+    "issuer_name": "C=US, O=Let's Encrypt, CN=YR2",
+    "common_name": "n8n.nativelabs.studio",
+    "name_value": "n8n.nativelabs.studio",
+    "id": 29420950490,
+    "not_before": "2026-09-07T08:43:38",
+    "not_after": "2026-12-06T08:43:37",
+    "serial_number": "05ac4cb786f155a0705f137a03b570af9466",
+    "result_count": 2
+  },
+  {
+    "issuer_ca_id": 286236,
+    "issuer_name": "C=US, O=Google Trust Services, CN=WE1",
+    "common_name": "nativelabs.studio",
+    "name_value": "nativelabs.studio\n*.www.nativelabs.studio\nwww.nativelabs.studio",
+    "id": 29287690424,
+    "not_before": "2026-08-26T05:33:57",
+    "not_after": "2026-11-24T06:33:53",
+    "serial_number": "41f07fc19a238f4013379a8171ac2a6f",
+    "result_count": 4
+  },
+  {
+    "issuer_ca_id": 286242,
+    "issuer_name": "C=US, O=Google Trust Services, CN=WR1",
+    "common_name": "nativelabs.studio",
+    "name_value": "nativelabs.studio\n*.www.nativelabs.studio\nwww.nativelabs.studio",
+    "id": 29279837179,
+    "not_before": "2026-08-26T05:33:46",
+    "not_after": "2026-11-24T06:31:27",
+    "serial_number": "00fe1f5e9896e78f8b0e3da769fcbcb7c8",
+    "result_count": 4
+  },
+  {
+    "issuer_ca_id": 286236,
+    "issuer_name": "C=US, O=Google Trust Services, CN=WE1",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 29216631478,
+    "not_before": "2026-08-26T05:31:39",
+    "not_after": "2026-11-24T06:31:37",
+    "serial_number": "00e8ca0887f851ffc213915a8f45ef0c98",
+    "result_count": 3
+  },
+  {
+    "issuer_ca_id": 286242,
+    "issuer_name": "C=US, O=Google Trust Services, CN=WR1",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 29216630382,
+    "not_before": "2026-08-26T05:31:29",
+    "not_after": "2026-11-24T06:31:27",
+    "serial_number": "00f655c851c50f9cb30e5aa09bcf7bdcf9",
+    "result_count": 3
+  },
+  {
+    "issuer_ca_id": 431054,
+    "issuer_name": "C=US, O=Let's Encrypt, CN=YE2",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 29263204776,
+    "not_before": "2026-08-25T17:32:38",
+    "not_after": "2026-11-23T17:32:37",
+    "serial_number": "06d61d04b5fa0fffcc5808120b9b459b79aa",
+    "result_count": 3
+  },
+  {
+    "issuer_ca_id": 431054,
+    "issuer_name": "C=US, O=Let's Encrypt, CN=YE2",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 29226448516,
+    "not_before": "2026-08-25T17:32:38",
+    "not_after": "2026-11-23T17:32:37",
+    "serial_number": "06d61d04b5fa0fffcc5808120b9b459b79aa",
+    "result_count": 3
+  },
+  {
+    "issuer_ca_id": 286236,
+    "issuer_name": "C=US, O=Google Trust Services, CN=WE1",
+    "common_name": "nativelabs.studio",
+    "name_value": "*.nativelabs.studio\nnativelabs.studio",
+    "id": 28989675031,
+    "not_before": "2026-08-24T07:07:50",
+    "not_after": "2026-11-22T07:55:54",
+    "serial_number": "5cf66a775b38fa6613bc0779665db7ea",
+    "result_count": 3
+  }
+]

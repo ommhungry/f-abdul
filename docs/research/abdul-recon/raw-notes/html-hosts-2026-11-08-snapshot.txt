@@ -1,0 +1,50 @@
+## hosts referenced in public HTML (home.html, en.html, privacy, terms) of 2026-11-08 snapshot
+ 144 https://abdul.chat
+ 108 http://www.w3.org
+  24 https://lin.ee
+  20 https://app.abdul.chat
+  16 https://schema.org
+   8 https://www.googletagmanager.com
+   8 https://nativelabs.studio
+   2 https://www.googleapis.com
+   2 https://developers.google.com
+## script src
+  12 /_next/static/chunks/...
+## meta tags
+<meta charSet="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="next-size-adjust" content=""/>
+<meta name="theme-color" content="#9ED259"/>
+<meta name="description" content="บอกอับดุลใน LINE ว่าต้องทำอะไร เมื่อไหร่ ยาของแม่ ค่าบัตร นัดลูกค้า เส้นตายงาน ถึงเวลาอับดุลทักเตือนตรงเวลา ใช้ในกลุ่ม LINE ของร้าน ทีม หรือครอบครัวได้ ทดลองฟรี 14 วัน ไม่ต้องใช้บัตร"/>
+<meta name="application-name" content="อับดุล"/>
+<meta name="author" content="Abdul"/>
+<meta name="keywords" content="อับดุล,Abdul,ผู้ช่วยส่วนตัว LINE,AI ผู้ช่วย,แชทบอท AI ภาษาไทย,เตือนความจำ,เตือนกินยา,เตือนจ่ายบิล,จัดการงาน,second brain,AI personal assistant,LINE bot Thailand"/>
+<meta name="creator" content="Abdul"/>
+<meta name="publisher" content="Abdul"/>
+<meta name="robots" content="index, follow"/>
+<meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/>
+<meta name="category" content="productivity"/>
+<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+<meta property="og:title" content="อับดุล ผู้ช่วยเตือนความจำใน LINE ทั้งเรื่องงานและเรื่องที่บ้าน"/>
+<meta property="og:description" content="บอกอับดุลใน LINE ว่าต้องทำอะไร เมื่อไหร่ ยาของแม่ ค่าบัตร นัดลูกค้า เส้นตายงาน ถึงเวลาอับดุลทักเตือนตรงเวลา ใช้ในกลุ่ม LINE ของร้าน ทีม หรือครอบครัวได้ ทดลองฟรี 14 วัน ไม่ต้องใช้บัตร"/>
+<meta property="og:url" content="https://abdul.chat"/>
+<meta property="og:site_name" content="อับดุล"/>
+<meta property="og:locale" content="th_TH"/>
+<meta property="og:image" content="https://abdul.chat/th/opengraph-image/cover?af410b45b603d5b8"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="อับดุล ผู้ช่วยเตือนความจำใน LINE บอกไว้ในแชต ถึงเวลาอับดุลเตือนเอง"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="อับดุล ผู้ช่วยเตือนความจำใน LINE ทั้งเรื่องงานและเรื่องที่บ้าน"/>
+<meta name="twitter:description" content="บอกอับดุลใน LINE ว่าต้องทำอะไร เมื่อไหร่ ยาของแม่ ค่าบัตร นัดลูกค้า เส้นตายงาน ถึงเวลาอับดุลทักเตือนตรงเวลา ใช้ในกลุ่ม LINE ของร้าน ทีม หรือครอบครัวได้ ทดลองฟรี 14 วัน ไม่ต้องใช้บัตร"/>
+<meta name="twitter:image" content="https://abdul.chat/th/twitter-image/cover?019eb3004d4635be"/>
+<meta name="twitter:image:alt" content="อับดุล ผู้ช่วยเตือนความจำใน LINE บอกไว้ในแชต ถึงเวลาอับดุลเตือนเอง"/>
+<meta name="twitter:image:type" content="image/png"/>
+<meta name="twitter:image:width" content="1200"/>
+<meta name="twitter:image:height" content="630"/>
+## gtag/clarity/posthog ids
+G-JFX73Z53T3
+phc_xSUycq

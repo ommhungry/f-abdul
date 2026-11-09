@@ -1,0 +1,14 @@
+######## abdul.chat
+media.abdul.chat
+api.abdul.chat
+app.abdul.chat
+######## abdul-ai.com
+admin.abdul-ai.com
+api.abdul-ai.com
+app.abdul-ai.com
+## media.abdul.chat A: 104.21.63.148 172.67.147.30  CNAME: 
+## api.abdul.chat A: 172.67.147.30 104.21.63.148  CNAME: 
+## app.abdul.chat A: 172.67.147.30 104.21.63.148  CNAME: 
+## admin.abdul-ai.com A: 172.67.166.245 104.21.16.83  CNAME: 
+## api.abdul-ai.com A: 172.67.166.245 104.21.16.83  CNAME: 
+## app.abdul-ai.com A: 104.21.16.83 172.67.166.245  CNAME: 

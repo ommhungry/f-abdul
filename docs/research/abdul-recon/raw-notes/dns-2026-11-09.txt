@@ -1,0 +1,65 @@
+## abdul.chat A
+172.67.147.30
+104.21.63.148
+## abdul.chat AAAA
+2606:4700:3030::6815:3f94
+2606:4700:3034::ac43:931e
+## abdul.chat CNAME
+## abdul.chat MX
+## abdul.chat TXT
+## abdul.chat NS
+meg.ns.cloudflare.com.
+titan.ns.cloudflare.com.
+## abdul.chat CAA
+## app.abdul.chat A
+172.67.147.30
+104.21.63.148
+## app.abdul.chat AAAA
+2606:4700:3034::ac43:931e
+2606:4700:3030::6815:3f94
+## app.abdul.chat CNAME
+## app.abdul.chat MX
+## app.abdul.chat TXT
+## app.abdul.chat NS
+## app.abdul.chat CAA
+## www.abdul.chat A
+## www.abdul.chat AAAA
+## www.abdul.chat CNAME
+## www.abdul.chat MX
+## www.abdul.chat TXT
+## www.abdul.chat NS
+## www.abdul.chat CAA
+## abdul-ai.com A
+172.67.166.245
+104.21.16.83
+## abdul-ai.com AAAA
+2606:4700:3033::6815:1053
+2606:4700:3037::ac43:a6f5
+## abdul-ai.com CNAME
+## abdul-ai.com MX
+1 smtp.google.com.
+## abdul-ai.com TXT
+"google-site-verification=cY4Pvr30WSWZTkw3wbDCPhLdb6MCXcp9cXVxFQg9s4c"
+## abdul-ai.com NS
+harlee.ns.cloudflare.com.
+thomas.ns.cloudflare.com.
+## abdul-ai.com CAA
+## nativelabs.studio A
+172.67.207.168
+104.21.85.167
+## nativelabs.studio AAAA
+2606:4700:3034::6815:55a7
+2606:4700:3032::ac43:cfa8
+## nativelabs.studio CNAME
+## nativelabs.studio MX
+## nativelabs.studio TXT
+## nativelabs.studio NS
+meg.ns.cloudflare.com.
+titan.ns.cloudflare.com.
+## nativelabs.studio CAA
+## _dmarc.abdul.chat TXT
+## _dmarc.abdul-ai.com TXT
+## _dmarc.nativelabs.studio TXT
+## SOA
+meg.ns.cloudflare.com. dns.cloudflare.com. 2419137705 10000 2400 604800 1800
+harlee.ns.cloudflare.com. dns.cloudflare.com. 2417476269 10000 2400 604800 1800

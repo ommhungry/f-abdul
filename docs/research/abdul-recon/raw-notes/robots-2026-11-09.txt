@@ -1,0 +1,20 @@
+User-Agent: *
+Allow: /
+
+User-Agent: GPTBot
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: PerplexityBot
+User-Agent: Perplexity-User
+User-Agent: ClaudeBot
+User-Agent: Claude-SearchBot
+User-Agent: Claude-User
+User-Agent: Google-Extended
+User-Agent: Applebot-Extended
+User-Agent: cohere-ai
+User-Agent: Amazonbot
+User-Agent: meta-externalagent
+Allow: /
+
+Host: https://abdul.chat
+Sitemap: https://abdul.chat/sitemap.xml

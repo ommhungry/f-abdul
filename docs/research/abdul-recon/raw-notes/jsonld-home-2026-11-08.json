@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://abdul.chat/#organization",
+      "name": "Abdul",
+      "alternateName": "อับดุล",
+      "url": "https://abdul.chat",
+      "logo": "https://abdul.chat/app-icon-512.png",
+      "description": "Abdul is a Thai-first reminder assistant in LINE. Tell it in Thai what needs doing and when (a parent's medicine, bills, client follow-ups, deadlines) and it messages you right on time. It also works in your shop's, team's or family's LINE groups. Free plan available.",
+      "sameAs": [
+        "https://lin.ee/6z0oLc2"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://abdul.chat/#website",
+      "url": "https://abdul.chat/",
+      "name": "อับดุล (Abdul)",
+      "inLanguage": "th-TH",
+      "description": "บอกอับดุลใน LINE ว่าต้องทำอะไร เมื่อไหร่ ยาของแม่ ค่าบัตร นัดลูกค้า เส้นตายงาน ถึงเวลาอับดุลทักเตือนตรงเวลา ใช้ในกลุ่ม LINE ของร้าน ทีม หรือครอบครัวได้ ทดลองฟรี 14 วัน ไม่ต้องใช้บัตร",
+      "publisher": {
+        "@id": "https://abdul.chat/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://abdul.chat/#software",
+      "name": "Abdul",
+      "alternateName": "อับดุล",
+      "url": "https://abdul.chat",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "LINE, Web",
+      "inLanguage": [
+        "th-TH",
+        "en"
+      ],
+      "description": "Abdul is a Thai-first reminder assistant in LINE. Tell it in Thai what needs doing and when (a parent's medicine, bills, client follow-ups, deadlines) and it messages you right on time. It also works in your shop's, team's or family's LINE groups. Free plan available.",
+      "publisher": {
+        "@id": "https://abdul.chat/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "description": "Free during beta, no credit card required."
+      },
+      "featureList": [
+        "Capture notes, photos, voice and files by chatting on LINE",
+        "Recall anything later with natural Thai-language search",
+        "Reminders delivered straight to your LINE chat",
+        "Track tasks and follow-ups"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://abdul.chat/#faq",
+      "inLanguage": "th-TH",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "อับดุลเตือนยังไง ต้องเปิดแอปไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่ต้อง ถึงเวลาอับดุลทักเป็นข้อความใน LINE เหมือนเพื่อนทัก กดเรียบร้อยหรือเลื่อนเวลาได้จากในแชตเลย ถ้าบอกว่าเรื่องไหนห้ามพลาด อับดุลจะทักซ้ำจนกว่าคุณจะตอบ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ให้อับดุลเตือนพ่อแม่หรือคนอื่นได้ไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ได้ ดึงอับดุลเข้ากลุ่ม LINE ที่มีคนนั้นอยู่ด้วย แล้วบอกให้เตือน อับดุลจะเตือนในกลุ่มตรงเวลา ใช้งานในกลุ่มได้ในแพ็กเกจร่างทองและเถ้าแก่"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ใช้ในกลุ่ม LINE ของร้านหรือทีมยังไง?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ดึงอับดุลเข้ากลุ่มแล้วเรียกชื่อได้ทันที แท็กคนที่ต้องทำพร้อมบอกเวลา อับดุลเตือนคนนั้นในกลุ่ม และสรุปเรื่องที่คุยกันให้ได้ด้วย คนอื่นในกลุ่มไม่ต้องสมัคร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ต้องพิมพ์เวลาแบบไหน?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "พิมพ์แบบที่พูดกันทุกวันได้เลย อย่าง บ่ายสาม 2 ทุ่ม ศุกร์หน้า ทุกวันที่ 25 หรือทุกวันพระ อับดุลเข้าใจ พิมพ์ผิดหรือพิมพ์ห้วนก็ไม่เป็นไร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "เริ่มใช้ฟรีจริงไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ฟรีจริง แพ็กเกจฟรีตั้งเตือนได้ 15 ครั้งต่อเดือน และผู้ใช้ใหม่ได้ทดลองใช้ร่างทองฟรี 14 วัน โดยไม่ต้องผูกบัตร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "จ่ายเงินยังไง ต้องใช้บัตรไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ไม่ต้องใช้บัตรก็ได้ จ่ายผ่านพร้อมเพย์แบบรายเดือนหรือรายปี หรือผูกบัตรให้ต่ออายุเองก็ได้ และทดลองใช้ร่างทองฟรีก่อน 14 วันโดยไม่ต้องผูกบัตร"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ข้อมูลปลอดภัยไหม ลบได้ไหม?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ข้อมูลเป็นของคุณคนเดียว อับดุลเก็บรักษาเป็นความลับ ไม่นำไปเปิดเผยที่ไหน ต้องการลบเมื่อไหร่ บอกคำเดียวก็ลบออกให้หมด"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Public-source log, 2026-11-09 (all accessed 2026-11-09 unless stated)
+
+LINE OA profile https://page.line.me/319gqomd
+  name อับดุล, @abdul, description "AI ผู้ช่วยส่วนตัว", country Thailand
+  friends 41,998 (2026-11-09); 41,573 recorded 2026-11-08 in teardown; 31,443 in a search-engine cached snippet (date unknown)
+  linked website on profile: https://abdul-ai.com/ (old brand domain, still live and serving the same Next.js site)
+  no timeline posts visible
+  badge: public OA page data has "badgeType":"certified" (LINE certified, blue badge); judge check 2026-11-09 also saw friendCount 42003
+
+Homepage JSON-LD (snapshot 2026-11-08): saved in jsonld-home-2026-11-08.json
+  Offer: price 0 THB, "Free during beta, no credit card required"  <- stale vs pricing section
+  featureList: capture notes/photos/voice/files, recall with Thai search, reminders, tasks  <- older "second brain" positioning
+  meta keywords include "second brain"
+  Analytics IDs present in HTML: Google Analytics G-JFX73Z53T3; PostHog project key prefix phc_xSUycq (public client key, truncated here)
+
+nativelabs.studio: "Native Labs", builds AI agents for Thai businesses on LINE/Excel/Drive; small engineering team; no Abdul mention; Next.js + Payload CMS; no legal name/address shown.
+
+Name collisions (NOT the same product, do not confuse):
+  - NECTEC "ABDUL" chatbot platform on AI for Thai (government, 2018+)  https://www.nectec.or.th/news/news-pr-news/2025-abdul.html
+  - Thai PBS World 2024 article on a Thai generative AI called "Abdul"  https://old.thaipbsworld.com/?p=338111
+  - "Abdul AI Assistant" iOS app by TechSolve Solution, site abdul.app  https://apps.apple.com/us/app/-/id6746529621
+  - GitHub Techfrontiers/abdul hackathon web chat (Nov 2026), abdul.sydear.space
+  - abdul-ai.com 2023-2024: Budibase builder instance (Wayback 2023-07-23), domain lapsed and was re-registered 2026-06-17
+
+Searches with no relevant hits (2026-11-09): Pantip reviews, TikTok/Facebook/YouTube demos, news coverage, job ads, DBD record for "Native Labs" / "เนทีฟ แล็บส์".
+Wayback CDX: zero captures of abdul.chat or page.line.me/319gqomd; abdul-ai.com only 2023 captures (previous owner).

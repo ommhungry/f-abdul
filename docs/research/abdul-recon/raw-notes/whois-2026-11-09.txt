@@ -1,0 +1,46 @@
+# Note (D-11): lines marked 'IANA TLD record' are creation dates of the .chat/.com/.studio TLDs, not of the domains. Domain dates are in the RDAP/registrar lines.
+######## abdul.chat
+created:      2015-01-29   (IANA TLD record, not the domain)
+######## abdul-ai.com
+created:      1985-01-01   (IANA TLD record, not the domain)
+   Updated Date: 2026-06-17T02:22:32Z
+   Creation Date: 2026-06-17T02:22:27Z
+   Registry Expiry Date: 2027-06-17T02:22:27Z
+   Registrar: Cloudflare, Inc.
+   Name Server: HARLEE.NS.CLOUDFLARE.COM
+   Name Server: THOMAS.NS.CLOUDFLARE.COM
+   DNSSEC: unsigned
+Updated Date: 2026-06-24T08:06:21Z
+Creation Date: 2026-06-17T02:22:27Z
+Registrar Registration Expiration Date: 2027-06-17T02:22:27Z
+Registrar: Cloudflare, Inc.
+Registrant Organization: 
+Registrant State/Province: Bangkok
+Registrant Country: TH
+Name Server: harlee.ns.cloudflare.com
+Name Server: thomas.ns.cloudflare.com
+DNSSEC: unsigned
+######## nativelabs.studio
+created:      2015-06-25   (IANA TLD record, not the domain)
+######## abdul.chat whois.nic.chat via 
+######## nativelabs.studio whois.nic.studio via 
+######## abdul.chat (RDAP)
+######## nativelabs.studio (RDAP)
+######## abdul.chat (RDAP via rdap.org)
+event expiration: 2027-09-02T09:30:14.073Z
+event registration: 2026-09-02T09:30:14.073Z
+event last changed: 2026-09-07T09:30:19.077Z
+event last update of RDAP database: 2026-11-09T04:25:09.24Z
+ns meg.ns.cloudflare.com
+ns titan.ns.cloudflare.com
+status client transfer prohibited
+entity roles=registrar Cloudflare, Inc
+######## nativelabs.studio (RDAP via rdap.org)
+event expiration: 2027-08-24T07:55:53.367Z
+event registration: 2026-08-24T07:55:53.367Z
+event last changed: 2026-09-07T09:22:59.358Z
+event last update of RDAP database: 2026-11-09T04:25:12.084Z
+ns meg.ns.cloudflare.com
+ns titan.ns.cloudflare.com
+status client transfer prohibited
+entity roles=registrar Cloudflare, Inc

@@ -1,0 +1,40 @@
+######## %.abdul.chat
+2026-09-02 Let's Encrypt abdul.chat
+2026-09-04 SSL Corporation *.abdul.chat,abdul.chat
+######## %.abdul-ai.com
+2023-04-21 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2023-04-21 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2023-06-19 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2023-06-19 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2023-08-17 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2023-08-17 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2023-10-15 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2023-10-15 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2023-12-13 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2023-12-15 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2024-02-14 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2024-02-27 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2024-04-13 Google Trust Services LLC *.abdul-ai.com,abdul-ai.com
+2026-06-17 Google Trust Services *.abdul-ai.com,abdul-ai.com
+2026-06-17 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2026-06-17 Let's Encrypt abdul-ai.com
+2026-08-15 Google Trust Services *.abdul-ai.com,abdul-ai.com
+2026-08-16 Let's Encrypt *.abdul-ai.com,abdul-ai.com
+2026-08-16 Let's Encrypt abdul-ai.com
+######## %.nativelabs.studio
+2026-08-24 Google Trust Services *.nativelabs.studio,nativelabs.studio
+2026-08-25 Let's Encrypt *.nativelabs.studio,nativelabs.studio
+2026-08-26 Google Trust Services *.nativelabs.studio,nativelabs.studio
+2026-08-26 Google Trust Services nativelabs.studio,*.www.nativelabs.studio,www.nativelabs.studio
+2026-09-07 Google Trust Services *.nativelabs.studio,nativelabs.studio
+2026-09-07 Let's Encrypt n8n.nativelabs.studio
+2026-09-11 Let's Encrypt records-api.<client-1>.nativelabs.studio
+2026-09-11 Let's Encrypt webhook.<client-1>.nativelabs.studio
+2026-09-14 Let's Encrypt <client-2>-api.nativelabs.studio
+2026-09-14 Let's Encrypt <client-2>.nativelabs.studio
+2026-10-04 Sectigo Limited *.nativelabs.studio,nativelabs.studio
+2026-10-05 Google Trust Services *.<client-3>.nativelabs.studio,<client-3>.nativelabs.studio,nativelabs.studio
+2026-10-05 Let's Encrypt ingest.<client-4>.nativelabs.studio
+2026-10-05 Let's Encrypt kb.<client-4>.nativelabs.studio
+
+# Note (D-8, 2026-11-09): names of 4 unrelated studio client projects redacted as <client-1>..<client-4> (data minimisation).

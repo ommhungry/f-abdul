@@ -1,0 +1,79 @@
+######## https://abdul.chat/
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+link: <https://abdul.chat/>; rel="alternate"; hreflang="th", <https://abdul.chat/en>; rel="alternate"; hreflang="en", <https://abdul.chat/>; rel="alternate"; hreflang="x-default"
+link: </_next/static/media/13a15bcdfeddab65-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/1cdb9a2cbcaafa7e-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/3c15d94fccf7493e-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/43ec41667659ee50-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/45cdbe8ded19ae08-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/4cdcd386d2ac59c8-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/8a0b72bc942f09c2-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/e2e5214eb9ed2ea9-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+x-middleware-rewrite: /th
+x-powered-by: Next.js
+x-railway-request-id: D3gBuB1FQbuFFo68V7rehQ
+x-hikari-trace: sin1.nzn2
+x-railway-edge: sin1
+cf-cache-status: DYNAMIC
+
+######## https://app.abdul.chat/
+HTTP/2 307 
+location: /home
+server: cloudflare
+x-railway-request-id: P3TfHj1ZQdqWLSfW-8Y8hA
+x-hikari-trace: sin1.462z
+x-railway-edge: sin1
+cf-cache-status: DYNAMIC
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+link: </_next/static/media/13a15bcdfeddab65-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/1cdb9a2cbcaafa7e-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/3c15d94fccf7493e-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/43ec41667659ee50-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/45cdbe8ded19ae08-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/4cdcd386d2ac59c8-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/8a0b72bc942f09c2-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/e2e5214eb9ed2ea9-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+x-powered-by: Next.js
+x-railway-request-id: XjONIl9_SvWbXWT7V7rehQ
+x-hikari-trace: sin1.462z
+x-railway-edge: sin1
+cf-cache-status: DYNAMIC
+
+######## https://abdul-ai.com/
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+link: <https://abdul-ai.com/>; rel="alternate"; hreflang="th", <https://abdul-ai.com/en>; rel="alternate"; hreflang="en", <https://abdul-ai.com/>; rel="alternate"; hreflang="x-default"
+link: </_next/static/media/13a15bcdfeddab65-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/1cdb9a2cbcaafa7e-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/3c15d94fccf7493e-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/43ec41667659ee50-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/45cdbe8ded19ae08-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/4cdcd386d2ac59c8-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/8a0b72bc942f09c2-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/e2e5214eb9ed2ea9-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+x-middleware-rewrite: /th
+x-powered-by: Next.js
+x-railway-request-id: A5EHrkBcRPaPrjwLAXC71g
+x-hikari-trace: sin1.98a6
+x-railway-edge: sin1
+cf-cache-status: DYNAMIC
+
+######## https://www.abdul-ai.com/
+curl: (6) Could not resolve host: www.abdul-ai.com
+######## https://nativelabs.studio/
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+cache-control: s-maxage=31536000
+vary: Sec-CH-Prefers-Color-Scheme
+accept-ch: Sec-CH-Prefers-Color-Scheme
+critical-ch: Sec-CH-Prefers-Color-Scheme
+x-nextjs-cache: HIT
+x-nextjs-prerender: 1,1
+x-nextjs-stale-time: 300
+x-powered-by: Next.js, Payload
+server: cloudflare
+
+######## https://abdul.chat/robots.txt
+HTTP/2 200 
+content-type: text/plain
+cache-control: public, max-age=14400, must-revalidate
+server: cloudflare
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-nextjs-cache: HIT
+x-railway-request-id: lDEtzWHeS9e_rW7hAQeqjw
+x-railway-edge: sin1
+x-hikari-trace: sin1.tr00
+last-modified: Mon, 09 Nov 2026 04:27:26 GMT
+cf-cache-status: EXPIRED
+
