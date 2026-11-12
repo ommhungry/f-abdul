@@ -202,7 +202,7 @@ create table merchant (
     id                     uuid primary key default gen_random_uuid(),
     name                    text not null,
     category                text not null,
-    integration_type         text not null check (integration_type in ('direct_api','hosted_handoff','telephone','manual')),
+    integration_type         text not null check (integration_type in ('direct_api','hosted_handoff','telephone','manual','line_oa_relay')),
     contact_info             jsonb
 );
 
