@@ -2,6 +2,12 @@
 
 [Back to the repository overview](../README.md)
 
+## Latest direction recorded on 15 November 2026
+
+Read the [proposed features](planning/proposed-features.md) and [AI implementation, routing, and personalities](design/ai-implementation.md) for the project owner's latest direction. Calendar-connected reminders form the current scope, financial tracking is proposed, and booking moves to phase 2. The endorsed AI direction uses paid APIs, two model tiers, and three selectable personalities.
+
+These dated documents update the direction described in earlier planning material. The charter, timeline, advisor briefing, database draft, and branch-specific SRS still need reconciliation with the new scope. Feature priorities, model choices, estimates, and the provisional personality concepts require team validation.
+
 ## Start here
 
 1. Use the [7 November kickoff agenda](meetings/2026-11-07-kickoff.md) to discuss scope, responsibilities, and open decisions.
