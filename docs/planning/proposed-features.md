@@ -37,7 +37,21 @@ The recommended first package combines the existing reminders, bill and subscrip
 | PF-13 | Booking engine | Execute bookings through supported channels after integration and partnership feasibility are established | User-directed phase 2 |
 | PF-14 | Assistant personality selection | Choose among three personalities during onboarding, with consistent style across model changes and an option to switch later | User-requested direction, character details provisional |
 
-The PF identifiers are local to this proposal. Mapping them to the repository’s earlier F, M, S, or SRS identifiers is a later reconciliation task.
+### Mapping from earlier feature IDs (added 17 November)
+
+The PF identifiers are the current ones. The earlier F-IDs (7 November kickoff and 12 November advisor briefing) map as follows. The M/S/C and SRS identifiers belong to material on the unmerged `jui` and `vj` branches and are superseded.
+
+| Earlier ID | Earlier feature | Now |
+| --- | --- | --- |
+| F01–F04, F06 | Onboarding and identity; text capture; validated dates and recurring reminders; upcoming obligations and evidence-aware status; access control, audit, deletion and export | The base reminder system under PF-01. Not separate PF items; sized as the foundation packages in the [timeline](timeline-and-development-phases.md) |
+| F05 | Selective family sharing | Not in the 15 November register. **Deferred, not a priority (17 November)**. The [database design](../design/database-design.md) keeps the sharing table for later |
+| F07 | Google Calendar push | PF-01, now current scope |
+| F08 | Booking | PF-13, phase 2. The non-API routes in the advisor briefing (concierge-assisted, hosted handoff, LINE OA relay) stay as phase 2 options |
+| F09 | Tax-document checklist | Not carried forward; no current owner |
+| F10 | Voice, Gmail ingestion, telephone booking | Gmail ingestion is now PF-02, a proposed pilot core. Voice and telephone booking remain deferred |
+| F11 | Autonomous banking and tax filing, unrestricted group reading, universal booking | Still excluded |
+
+Note that the unmerged combined proposal listed Google Calendar and Gmail OAuth as out of scope. The 15 November direction reverses that: both are now in or proposed, and the Google verification dependencies below apply.
 
 ## Spending assistant pilot
 

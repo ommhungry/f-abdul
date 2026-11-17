@@ -3,16 +3,18 @@
 | Field | Value |
 |---|---|
 | Status | Draft for team review; not an approved implementation specification |
-| Version | 0.1 |
+| Version | 0.2 (references and scope note updated 17 November; schema unchanged) |
 | Date | 12 November 2026 |
 | Scope | Schema, database-type analysis, and provider recommendation for the prototype and its scale-up path |
-| Inputs | [Business and Architecture Brief](../research/business-and-architecture-brief.md) §8.2–8.9, [Project Charter](../governance/project-charter.md) §3, §G2 |
+| Inputs | [Business and Architecture Brief](../research/business-and-architecture-brief.md) §8.2–8.9, [Proposed features](../planning/proposed-features.md), [Timeline](../planning/timeline-and-development-phases.md) (gate G2) |
+
+> **Scope note (17 Nov 2026).** The schema was drafted before the 15 November direction (calendar-connected reminders current, spending proposed, booking phase 2). It still fits: the obligation, notification, audit and `connector_grant` tables serve calendar-connected reminders; `sharing_grant` is kept for family sharing, which is deferred (not a priority as of 17 November) and not needed for the April prototype; and the `merchant`, `booking` and `action_request` tables are phase 2 booking and need not be built for the April prototype. **Not yet designed:** the tables the proposed spending pilot needs (transactions with source references and import status, categories, budgets, links between related records such as a receipt and its card notification). See §7.
 
 This document turns the brief's logical core data model (§8.2) into a concrete relational schema, explains why a relational database is the right primary store for this product, and recommends a specific managed provider with a path to commercial scale. It is written to feed the 20 November design-approval gate (G2) and the 22 November proposal submission — it is not itself an approved decision.
 
 ## 1. Design constraints carried over from the brief
 
-These are not re-derived here; they are binding inputs from the architecture brief and charter:
+These are not re-derived here; they are binding inputs from the architecture brief and the project direction:
 
 - **Relational database is the source of truth** (§8.2). Documents live in encrypted object storage; OCR text and search indexes are derived data with the same access controls. A vector index is never the authoritative ledger for payment or booking state.
 - **Status states must stay distinct**: captured, confirmed obligation, action pending, user-reported completion, supporting evidence attached, externally verified completion, uncertain outcome (§5).
@@ -311,7 +313,7 @@ This is the mechanism behind "revocation affects future access immediately" (§8
 
 ### 6.1 Workload shape
 
-- **Volume now**: a synthetic-data, invited pilot cohort (per charter §"Prototype operation boundary") — low hundreds of users, thousands of obligations/notifications. Trivial for any managed Postgres tier.
+- **Volume now**: a synthetic-data, invited pilot cohort (synthetic or low-sensitivity data, as in the timeline §8) — low hundreds of users, thousands of obligations/notifications. Trivial for any managed Postgres tier.
 - **Volume at commercial pilot** (brief §10): the ฿300k/month illustrative fixed-cost scenario implies a target around 4,800 paying users before profitability — still comfortably single-node Postgres territory (tens of thousands of rows per table, not millions).
 - **Fastest-growing tables**: `notification` and `audit_event` — both are write-once, append-mostly, and time-ordered, which is why both are defined range-partitioned by month above. This is the standard Postgres answer to unbounded time-series growth and keeps indexes small without needing a separate time-series database.
 - **Read pattern**: overwhelmingly point lookups by `user_id` ("my obligations", "my notifications") — index-friendly, not analytical/OLAP. No case yet for a columnar or NoSQL engine.
@@ -324,15 +326,15 @@ This is the mechanism behind "revocation affects future access immediately" (§8
 
 | Option | Fit for prototype (now → Apr 2027) | Fit for commercial scale (post-pilot) |
 |---|---|---|
-| **Supabase (Postgres)** — recommended for the prototype | Free/low-cost tier covers the pilot's load with no budget approval needed (charter §10 budget rows are currently "Unset"); built-in Auth can front LINE identity exchange; built-in Storage for `source_document` bytes in the same project; RLS is a first-class, UI-supported feature — directly matches §5 above; a Singapore region is selectable, helping the PDPA cross-border story in brief §7 | Scales vertically on the paid tiers (larger compute/storage, read replicas, point-in-time recovery) well past the 4,800-user commercial-pilot scenario before any migration is needed |
+| **Supabase (Postgres)** — recommended for the prototype | Free/low-cost tier covers the pilot's load with no budget approval needed (the hosting budget line is still unset); built-in Auth can front LINE identity exchange; built-in Storage for `source_document` bytes in the same project; RLS is a first-class, UI-supported feature — directly matches §5 above; a Singapore region is selectable, helping the PDPA cross-border story in brief §7 | Scales vertically on the paid tiers (larger compute/storage, read replicas, point-in-time recovery) well past the 4,800-user commercial-pilot scenario before any migration is needed |
 | **AWS RDS / Aurora PostgreSQL (ap-southeast-1, Singapore)** — recommended graduation target | Viable but adds IAM/VPC/networking setup the team doesn't need yet for a synthetic-data pilot | Same SQL dialect as Supabase (it *is* Postgres) — migration is `pg_dump`/`pg_restore`, not a rewrite. Aurora adds read replicas, multi-AZ failover, and finer-grained scaling knobs appropriate once there's paying-customer SLA pressure |
-| Self-hosted Postgres (own VM/container) | Avoid for the prototype — adds backup, patching, and failover work the charter's QO role (already thinly staffed) would have to own alone | Avoid unless cost at very large scale justifies the added ops burden; the managed options above outscale the team's likely needs for years |
+| Self-hosted Postgres (own VM/container) | Avoid for the prototype — adds backup, patching, and failover work a team of three at 3–4 h/week each would have to own alone | Avoid unless cost at very large scale justifies the added ops burden; the managed options above outscale the team's likely needs for years |
 | MongoDB / Firestore | Not recommended — would require re-implementing the FK/RLS/ACID guarantees from §4 in application code | Same objection persists at scale; the problem isn't volume, it's the authorization and transactional-integrity model |
 | Dedicated vector DB (Pinecone, etc.) | Not needed yet; no feature currently requires it | If semantic search is added later, prefer `pgvector` inside the same Postgres instance over a separate system (§4) |
 
 **Recommendation: build on Supabase (hosted Postgres, Singapore region) for the prototype, with Aurora PostgreSQL in `ap-southeast-1` as the named graduation target if/when the product moves from evaluated prototype to a funded commercial pilot.** Both speak the same SQL dialect and the schema in §3 runs unmodified on either, so this is a deliberate build-up path, not a rewrite risk.
 
-Before committing to a specific vendor, confirm its subprocessor list and data-transfer terms satisfy the PDPA cross-border requirements already flagged in brief §7 — this applies equally to Supabase and AWS, and is a compliance/legal decision (PS role, §4 of the charter), not just a technical one.
+Before committing to a specific vendor, confirm its subprocessor list and data-transfer terms satisfy the PDPA cross-border requirements already flagged in brief §7 — this applies equally to Supabase and AWS, and is a compliance/legal decision (privacy/security owner), not just a technical one.
 
 ### 6.4 Scale-up path beyond the commercial pilot
 
@@ -346,7 +348,8 @@ In order of when they'd actually be needed, not pre-built now:
 
 ## 7. Open items for the team before 20 November (G2)
 
-- Confirm the Supabase vs. self-managed decision against the as-yet-"Unset" hosting budget line (charter §10).
-- PS to confirm the selected provider/region satisfies PDPA cross-border requirements (brief §7) before this is treated as approved.
-- TL to confirm `idempotency_key` generation strategy for `action_request` against the specific connectors chosen for the pilot's one booking category (brief §6).
+- Confirm the Supabase vs. self-managed decision against the still-unset hosting budget line.
+- The privacy/security owner to confirm the selected provider/region satisfies PDPA cross-border requirements (brief §7) before this is treated as approved.
+- The technical lead to confirm `idempotency_key` generation for calendar writes (and receipt imports, if the spending pilot proceeds). The `action_request` booking path is phase 2.
+- If the spending pilot is approved (timeline decision O3), design its tables before G2 or record them as a post-submission design task. Repeated imports must be idempotent, and unknown transaction types must enter review instead of changing a total ([Proposed features](../planning/proposed-features.md)).
 - Confirm retention periods per data class so the partition-drop/archive job in §6.4 has concrete numbers rather than "short justified retention."

@@ -195,7 +195,7 @@ Include incorrect extraction, failed calendar writes, unavailable connectors, ov
 - Choose the managed database, queue, scheduler, and deployment region.
 - Define the routing and task-result schemas and bounded retry policy.
 - Set usage limits, cost monitoring, and latency targets.
-- Reconcile this direction with the charter, timeline, database draft, and branch-specific SRS.
+- Add model-routing, personality and infrastructure work to the [timeline](../planning/timeline-and-development-phases.md); it is not yet estimated there. (The timeline, advisor briefing and database draft were reconciled to this direction on 17 November; the charter was withdrawn and the SRS stays on its branch.)
 - Revisit self-hosting when measured cost, quality, throughput, or deployment requirements justify it.
 
 The earlier 65–110-hour estimate in the feature proposal covers the financial feature increment under its stated assumptions. Additional model-routing, personality, and infrastructure work needs its own estimate during planning.

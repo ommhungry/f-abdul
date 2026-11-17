@@ -13,6 +13,8 @@
 | Distribution | LINE-first, with an embedded web interface for structured interactions |
 | Purpose | Align the team on the opportunity, evidence, recommended product, commercial assumptions, and technical boundaries |
 
+> **Status note (17 Nov 2026).** This is a research snapshot dated 6 November and describes the long-term vision. It has not been revised since the project owner's 15 November direction: calendar-connected reminders are the current scope, a spending-and-bills assistant is proposed, and booking is phase 2. Read it for evidence (competition, §6 booking feasibility, §7 privacy, §8 architecture, §9–§11 economics and risks), not for the current feature list. See [Proposed features](../planning/proposed-features.md) and the [timeline](../planning/timeline-and-development-phases.md). The brief's recommended booking pilot (§6) and family coordination (§5) are not part of the current scope.
+
 > **Decision recorded:** Prioritize individual use. Also support the person coordinating obligations for a family. Family support must preserve each person's private information and autonomy.
 >
 > **Recommendation:** Build around completing everyday obligations—bills, rent, documents, renewals, and appointments—with booking added where dependable merchant access exists.
