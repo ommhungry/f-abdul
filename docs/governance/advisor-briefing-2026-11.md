@@ -2,7 +2,7 @@
 
 **Date:** 12 November 2026, updated 17 November 2026 · **Status:** Draft for advisor review, pre-proposal (submission 22 Nov 2026) · **Full detail:** [proposed features](../planning/proposed-features.md), [AI implementation](../design/ai-implementation.md), [timeline](../planning/timeline-and-development-phases.md), [database design](../design/database-design.md), [architecture brief](../research/business-and-architecture-brief.md)
 
-> **Update (17 Nov 2026).** The 12 November version of this briefing proposed keeping booking in the baseline through non-API routes. The project owner's 15 November direction supersedes that: **calendar-connected reminders are the current scope, a spending-and-bills assistant is proposed, and booking moves to phase 2.** Sections 2, 3 and 6 are rewritten accordingly. The non-API booking routes are kept as phase 2 options.
+> **Update (17 Nov 2026).** The 12 November version of this briefing proposed keeping booking in the baseline through non-API routes. The project owner's 15 November direction supersedes that: **calendar-connected reminders are the current scope, the proposed spending-and-bills assistant was dropped on 17 November, and booking moves to phase 2.** Sections 2, 3 and 6 are rewritten accordingly. The non-API booking routes are kept as phase 2 options.
 
 ## 1. Project idea
 
@@ -10,7 +10,7 @@ A LINE-based AI assistant for office workers and other individuals in Thailand m
 
 **Pitch:** *Send it once. Know what needs doing, get help doing it, and keep track of what is actually finished.*
 
-**Positioning vs. competitors (Abdul, Lamai, Cole):** reminders and calendar sync already exist in the market. Our differentiation is **capture-to-completion trustworthiness** — distinguishing *user-reported* from *externally verified* completion, source-grounded extraction (no silently invented dates/amounts), and (proposed) low-effort capture of bills and spending — not any single integration.
+**Positioning vs. competitors (Abdul, Lamai, Cole):** reminders and calendar sync already exist in the market. Our differentiation is **capture-to-completion trustworthiness** — distinguishing *user-reported* from *externally verified* completion, and source-grounded extraction (no silently invented dates/amounts) — not any single integration.
 
 ## 2. Booking moves to phase 2 — and how it could be done without a private API
 
@@ -37,7 +37,7 @@ Source: [Proposed features](../planning/proposed-features.md). Earlier F-IDs map
 | Status | Features |
 |---|---|
 | **Current scope (user-confirmed)** | PF-01 Calendar-connected reminders, on top of the base obligation system: LINE onboarding and verified identity, text capture with AI-suggested fields and source text retained, validated dates and amounts, recurring reminders, snooze and completion recording, user-reported vs. externally verified status kept distinct, privacy controls, export/deletion |
-| **Proposed pilot core** | PF-02 Receipt and transaction capture (Gmail), PF-03 Spending categorization, PF-04 Budget tracking, PF-05 Weekly spending summary, PF-07 Manual expense capture |
+| **Dropped 17 Nov (was proposed pilot core)** | PF-02 Receipt and transaction capture (Gmail), PF-03 Spending categorization, PF-04 Budget tracking, PF-05 Weekly spending summary, PF-07 Manual expense capture |
 | **Recommended early extension** | PF-06 Bill and subscription tracking |
 | **Candidates after validation** | PF-08 Expense reimbursement, PF-09 Follow-up tracking, PF-10 Daily planning, PF-11 Purchase and refund tracking, PF-12 Meeting preparation |
 | **Phase 2** | PF-13 Booking engine (see §2) |
@@ -45,7 +45,7 @@ Source: [Proposed features](../planning/proposed-features.md). Earlier F-IDs map
 | **Deferred** | Selective family sharing (earlier F05): in the 12 Nov baseline, but not a priority as of 17 Nov. Out of the April scope |
 | **Deferred / excluded** | Voice input, telephone booking, tax-document checklist, autonomous banking or tax filing |
 
-The spending pilot is a proposal with an estimate of 65–110 team-hours, which does not fit the remaining capacity alongside the base plan under the planning-case scenario (timeline §6). The team must decide whether to run it, narrow it to bills and subscriptions, or defer it.
+**The spending pilot was dropped on 17 November.** It was a proposal with an estimate of 65–110 team-hours, which does not fit the remaining capacity alongside the base plan under the planning-case scenario (timeline §6). A competitor check also found the space already served (YES BOSS!, MAKE by KBank, MeowJot).
 
 ## 4. Requirements that shape the build
 
@@ -70,8 +70,7 @@ Full schema and rationale: [docs/design/database-design.md](../design/database-d
 ## 6. Other items for advisor input
 
 - **Timeline:** proposal due 22 Nov 2026 (architecture/design finalized, no working implementation required); evaluated prototype due 30 Apr 2027. See the [timeline](../planning/timeline-and-development-phases.md) for phases, gates and open decisions.
-- **Decision needed from advisor:** confirm the current scope (calendar-connected reminders) and whether the spending-and-bills pilot should be attempted within the same capacity, narrowed to bills and subscriptions, or left for phase 2. The 65–110 h estimate does not fit alongside the base plan under the planning-case calendar (timeline §6).
+- **Decision needed from advisor:** confirm the current scope (calendar-connected reminders) and advise on which differentiating feature to add. A competitor check on 17 November found seven LINE assistants advertising the same core, so the proposal needs one thing they do not offer.
 - **Phase 2 booking:** when the time comes, confirm that concierge-assisted booking will be disclosed as human-assisted, not assistant-executed, and choose the first pilot category (salons vs. sports courts).
-- **Open risk carried from the brief:** feature parity with existing reminder apps remains rated 4/10 differentiation; the team's mitigation is execution quality (capture accuracy, evidence rules), and the proposed spending assistant, which still needs to be demonstrated, not assumed.
-- **New dependency:** Gmail's read-only scope is restricted. Verification may not clear before April, so the spending pilot needs a fallback (manual capture through LINE).
+- **Open risk carried from the brief:** feature parity with existing reminder apps remains rated 4/10 differentiation; the team's mitigation is execution quality (capture accuracy, evidence rules), which still needs to be demonstrated, not assumed.
 - **Not yet decided:** named role assignments, approved budget lines (hosting, model API, LINE plan), exact AI models, and PDPA counsel review.

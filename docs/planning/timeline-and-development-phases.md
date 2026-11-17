@@ -25,7 +25,7 @@ Related files: [Proposed features](proposed-features.md) (scope source), [AI imp
 
 The confirmed capacity supports a **small evaluated prototype**, not the full commercial product described in the research brief. The recommended April deliverable is a LINE assistant that turns a message into a tracked obligation, sends reminders connected to the user's calendar, and records completion honestly. It includes bounded AI interpretation, basic operational controls, and a supervised evaluation with a handover package. Booking, partner APIs, phone calls, payments and a merchant side are phase 2.
 
-The spending-and-bills assistant is a **proposal**, not a commitment. Its estimate (65–110 h) is large relative to the remaining margin (§6), so the team must choose between running it as a limited pilot, narrowing it to bills and subscriptions only, or leaving it for phase 2. That is decision O3 in §7.
+The spending-and-bills assistant was **dropped on 17 November 2026** (decision O3). Its estimate (65–110 h) did not fit the capacity (§6), and a competitor check the same day found the space already served by YES BOSS! and by bank-backed apps (MAKE by KBank, MeowJot). References to it below (package MS, the P3 title, the cut order) are kept for the record only; no spending work is planned.
 
 The team must approve the completion definition and the feature baseline. If a broader pilot is mandatory, add substantial capacity or revise the scope. Do not assume AI coding tools eliminate design, verification, integration, review, or support work.
 
@@ -155,7 +155,7 @@ All dates are in 2026/2027 as shown. Phase end dates are calendar-window boundar
 | P0 — initiation, requirements, architecture/design | 7–22 Nov 2026 | 16 days | Approved design and submitted proposal | G0–G2 and submission receipt |
 | P1 — foundations | 23 Nov–13 Dec | 3 weeks | Signature-checked LINE webhook, event inbox, schema, job worker, deployment with separate development and pilot channels, alerts; Google Calendar and Gmail authorization spike | G3; approved scope/stack and accounts |
 | P2 — individual flow and bounded AI | 14 Dec–24 Jan 2027 | 6 weeks | Text capture, confirmation, one-off reminders, snooze, evidence-aware completion, Thai test set; model routing and structured task results | G4; durable records and event handling |
-| P3 — calendar connection and spending pilot | 25 Jan–14 Feb | 3 weeks | Calendar-connected reminders; if approved (O3), email receipt capture, correction flow, bills and subscriptions, budget summary | G5 feature complete |
+| P3 — calendar connection | 25 Jan–14 Feb | 3 weeks | Calendar-connected reminders; remaining time goes to the differentiating feature chosen from the competitor gap analysis (not yet decided) | G5 feature complete |
 | P4 — system verification and evaluation readiness | 15–28 Feb | 2 weeks | Isolation and fault-injection tests, privacy materials, retention jobs, restore exercise, tester recruiting and consent | G6 before invited user access |
 | P5 — controlled evaluation and fixes | 1 Mar–11 Apr | 6 weeks | 1–14 Mar overflow for P1–P4 and tester onboarding; evaluation 15 Mar–11 Apr (four weeks); fixes; stabilization in the late part of the window | G7 evaluation report |
 | P6 — stabilization | 12–18 Apr | 1 week | **No work planned**: stabilization moves into late P5, before Songkran (13–15 Apr) | No new features |
@@ -197,7 +197,7 @@ gantt
     section Implementation
     Foundations :p1, 2026-11-23, 2026-12-14
     Individual flow and bounded AI :p2, 2026-12-14, 2027-01-25
-    Calendar connection and spending pilot :p3, 2027-01-25, 2027-02-15
+    Calendar connection :p3, 2027-01-25, 2027-02-15
     System verification and readiness :p4, 2027-02-15, 2027-03-01
     section Evaluation and closure
     Overflow and tester onboarding :p5a, 2027-03-01, 2027-03-15
@@ -232,7 +232,7 @@ These estimates are rough planning ranges before implementation experience; upda
 | MC | **Calendar-connected reminders** (approximation, see below): Google Calendar link/unlink and encrypted tokens, event write/update/delete, idempotent writes, reconnection, tests | 17 | 27 | 22 | P1 spike; P3 |
 | **Base + MC (the committed scope)** | | **113** | **160** | **136.5** | |
 
-| MS | **Spending pilot (proposed)**: Gmail authorization and import, extraction and reconciliation, budgets and LINE summaries, data controls and testing | 65 | 110 | 87.5 | P3 and later |
+| MS | **Spending pilot (dropped 17 Nov, not planned)**: Gmail authorization and import, extraction and reconciliation, budgets and LINE summaries, data controls and testing | 65 | 110 | 87.5 | P3 and later |
 
 M4 (requests to a business: composer, handoff, follow-up, router, 15–24 h in v0.3) is removed with booking.
 
@@ -307,7 +307,7 @@ Submission requirements + actual availability
 |---|---|---|---|
 | O1 | Completion definition: small evaluated prototype (recommended) vs broader pilot | Before G2 | Broader pilot needs more capacity |
 | O2 | Named roster, roles, weekly slots, proposal submitter and backup | Now | All still unassigned |
-| O3 | Spending pilot: run as proposed, narrow to bills and subscriptions, or defer to phase 2 | 18 Nov | Depends on the §6 margin and on measured email coverage |
+| O3 | Spending pilot | **Decided 17 Nov: dropped** | Did not fit capacity; space already served by competitors. Gmail access (O8) is no longer needed |
 | O4 | Family sharing | **Decided 17 Nov: deferred, not a priority** | Out of the April scope; revisit after the evaluation |
 | O5 | Evaluation window and Songkran handling (the 1–14 Mar overflow in §5, or the earlier six-week plan) | 18 Nov | Moves G6 |
 | O6 | University exam periods and advisor checkpoints | Now | Rebaseline §2 when known |
@@ -336,9 +336,9 @@ A LINE webhook with a valid signature creates an event record; forged or replaye
 
 A user sends text, sees a confirmation with the interpreted fields, and can Confirm, Edit, or Cancel. A confirmed obligation produces a reminder with snooze and done. Completion records an evidence level. AI proposes structured values within defined bounds; it cannot grant permission, send anything, or invent completion. Dates and amounts are validated in code. Existing reminders run if model processing fails. The Thai test set is run against the thresholds recorded in advance.
 
-### P3: calendar connection and spending pilot
+### P3: calendar connection
 
-An authorized user's confirmed obligations appear as calendar events, with idempotent writes (a retry never creates a duplicate), and a revoked or expired connection fails visibly rather than silently. If O3 approves the spending pilot: the user connects a supported email account, imported receipts become editable records with a source reference, duplicates and uncertain entries go to review, and the assistant reports totals only for the sources it has covered.
+An authorized user's confirmed obligations appear as calendar events, with idempotent writes (a retry never creates a duplicate), and a revoked or expired connection fails visibly rather than silently.
 
 ### P4: readiness
 
@@ -393,7 +393,7 @@ Before this timeline becomes a commitment:
 
 - [ ] Team approves the evaluated-prototype completion definition (O1).
 - [ ] Names, roles, weekly slots, and absences are recorded (O2).
-- [ ] Spending pilot decided (O3). Family sharing is deferred (O4).
+- [x] Spending pilot dropped (O3). Family sharing deferred (O4).
 - [ ] Architecture and design are approved by 20 November.
 - [ ] Hours and costs are re-estimated using the selected stack, including the P1 spike result for MC (O7, O8).
 - [ ] University exam periods and holidays are recorded and the phase plan rebaselined (O6).

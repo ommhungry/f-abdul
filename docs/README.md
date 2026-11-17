@@ -6,7 +6,7 @@
 
 The latest direction was recorded on **15 November 2026**. Read these first:
 
-1. [Proposed features](planning/proposed-features.md): calendar-connected reminders are the current scope, financial tracking is proposed, and booking moves to phase 2.
+1. [Proposed features](planning/proposed-features.md): calendar-connected reminders are the current scope and booking moves to phase 2. The spending assistant it proposed was dropped on 17 November.
 2. [AI implementation, routing, and personalities](design/ai-implementation.md): paid APIs, two model tiers, and three selectable personalities (provisional).
 3. [Timeline and development phases](planning/timeline-and-development-phases.md) (v0.4): schedule, gates, estimates and open decisions, reconciled to that direction.
 

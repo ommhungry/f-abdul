@@ -7,7 +7,7 @@ A proposed LINE-based AI personal assistant for office workers and other individ
 Recorded by the project owner on **15 November 2026**:
 
 - **Current scope:** calendar-connected reminders for everyday obligations, delivered through LINE.
-- **Proposed, awaiting team decision:** a spending-and-bills assistant (receipt and transaction-email capture, budgets, bill and subscription tracking).
+- **Dropped (17 November 2026):** the proposed spending-and-bills assistant. It did not fit the capacity and the space is already served by competitors.
 - **Phase 2:** booking, which depends on partnerships and evidence of a user base.
 - **AI:** paid model APIs, task-based routing between two model tiers, and three selectable assistant personalities (provisional).
 

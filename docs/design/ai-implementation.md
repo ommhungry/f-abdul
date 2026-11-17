@@ -8,7 +8,7 @@ The project owner endorsed the proposed direction of cloud application hosting w
 
 The initial design uses two model tiers, structured task results, and personality-specific response templates. Exact model versions, provider accounts, hosting configuration, routing thresholds, and the three final character identities remain choices to validate. Professional, Companion, and Coach are provisional personality concepts.
 
-The current product direction is calendar-connected reminders, proposed spending and bills features, and booking in phase 2. The companion [proposed-features document](../planning/proposed-features.md) contains feature scope, estimates, and validation questions.
+The current product direction is calendar-connected reminders and booking in phase 2. The proposed spending and bills features were dropped on 17 November 2026, so the spending examples in the routing tables below are illustrative only. The companion [proposed-features document](../planning/proposed-features.md) contains feature scope, estimates, and validation questions.
 
 ## Goals
 

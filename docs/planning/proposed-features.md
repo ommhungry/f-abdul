@@ -6,6 +6,8 @@ Related design document — [AI implementation, routing, and personalities](../d
 
 ## Status and current direction
 
+> **Decision (17 Nov 2026): the spending assistant is dropped.** PF-02 to PF-05 and PF-07 (receipt and transaction capture, categorization, budgets, weekly summary, manual expense capture) are no longer proposed, and the Gmail integration is not needed. Reasons: the 65–110 h estimate did not fit the team's capacity, and a competitor check found the space already served (YES BOSS! reads slips and tracks expenses in LINE; MAKE by KBank and MeowJot are bank-backed and free). The spending sections below are kept as a record. Calendar-connected reminders (PF-01) remain the current scope and booking (PF-13) remains phase 2.
+
 This document records the feature discussion and recommendations for team review. The user confirmed that the current functional scope consists of reminders connected to calendars. Booking moves to phase 2 because access to the private APIs of the booking platforms being considered depends on partnerships and evidence of a user base. Other features below are proposals awaiting prioritization and validation.
 
 The working audience is office workers and individuals managing everyday obligations in Thailand. The proposed interface is LINE. The previously recorded capacity is three students contributing 3–4 hours each per week. Proposal submission is 22 November 2026 and project completion is 30 April 2027. These capacity and dates come from the earlier project context and should be checked when the team approves a revised plan.
